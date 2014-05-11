@@ -13,7 +13,6 @@ PowerConsumption$DateTime <- strptime(paste(PowerConsumption$Date, PowerConsumpt
 png("plot2.png", height=480, width=480);
 
 # create graph# 2
-#hist(PowerConsumption$Global_active_power, freq=TRUE, col="red", main ="Global Active Power", xlab="Global Active Power (kilowatts)");
 plot(PowerConsumption$DateTime, PowerConsumption$Global_active_power, pch = NA, xlab = "", ylab = "Global Active Power (kilowatts)");
 lines(PowerConsumption$DateTime, PowerConsumption$Global_active_power);
 
